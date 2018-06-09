@@ -1,0 +1,4 @@
+var Barco = {
+    nom : "",
+    tamany : ""
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html manifest="battleships.appcache">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Partida.js"></script>
+    <script type="text/javascript" src="Jugador.js"></script>
+    <script type="text/javascript" src="Barco.js"></script>
+    <script type="text/javascript" src="logica.js"></script>
+
+    <!--link rel="preload" href="imatges/broken-img.png" as="image"-->
+    <title>Battleship</title>
+</head>
+
+<body>
+    <h1>Projecte Battleship</h1>
+    </head>
+
+    <body>
+        <form name="choose">
+            <input id="nomJugador" type="text" placeholder="El teu nom"/>
+            <!--<input name="5x5" type="button" value="Inici" onclick='setVariables5x5();'/>
+            <input name="7x7" type="button" value="7 x 7 Game" onclick='setVariables7x7();'/>-->
+            <input name="10x10" type="button" value="Inici" onclick='setVariables10x10();'/>
+        </form>
+        <div id="clicktable">
+
+        </div>
+        <div id="ddtable">
+
+            <div class="container">
+                <img class="image" id="barco2" name="imgBarco2" src="imatges/barco2/barco2.png" draggable="true" ondragstart="dragStart(event)">
+                <br>
+                <div class="middle">
+                    <div class="text">destructor</div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <img class="image" id="barco3" name="imgBarco3" src="imatges/barco3/barco3.png" draggable="true" ondragstart="dragStart(event)">
+                <br>
+                <div class="middle">
+                    <div class="text">cruiser</div>
+                </div>
+            </div>
+    
+            <div class="container">
+                    <img class="image" id="barco4" name="imgBarco4" src="imatges/barco4/barco4.png" draggable="true" ondragstart="dragStart(event)">
+                    <br>
+                <div class="middle">
+                    <div class="text">battleship</div>
+                </div>
+            </div>
+    
+            <div class="container">
+                    <img class="image" id="barco5" name="imgBarco5" src="imatges/barco5/barco5.png" draggable="true" ondragstart="dragStart(event)">
+                    <br>
+                <div class="middle">
+                    <div class="text">aircraft</div>
+                </div>
+            </div>
+
+
+    </body>
+</html>
